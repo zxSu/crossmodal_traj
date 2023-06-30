@@ -35,6 +35,15 @@ python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decode
 | PIE Deterministic (Table.1) | my_trans_unimodal_PIE.yml | bezier_curve |
 | JAAD Multimodal (Table.2) | my_trans_multimodal_JAAD.yml | bezier_curve |
 | PIE Multimodal (Table.2) | my_trans_multimodal_PIE.yml | bezier_curve |
+| JAAD (config-1 in Table.3) | acl_unimodal_JAAD.yml | bezier_curve |
+| PIE (config-1 in Table.3) | acl_unimodal_PIE.yml | bezier_curve |
+| JAAD (config-2 in Table.3) | concat_unimodal_JAAD.yml | bezier_curve |
+| PIE (config-2 in Table.3) | concat_unimodal_PIE.yml | bezier_curve |
+| JAAD (config-3 in Table.3) | my_trans_unimodal_JAAD.yml | mlp |
+| PIE (config-3 in Table.3) | my_trans_unimodal_PIE.yml | mlp |
+| JAAD (config-4 in Table.3) | my_trans_unimodal_JAAD.yml | gru |
+| PIE (config-4 in Table.3) | my_trans_unimodal_PIE.yml | gru |
+
 
 
 
