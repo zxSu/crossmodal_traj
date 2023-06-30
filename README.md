@@ -29,20 +29,20 @@ python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_P
 
 4.Training  
 python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decoder_type "bezier_curve"
-| description | YML_FILE | decoder_type |
-| :------: | :------: | :------: |
-| JAAD Deterministic (Table.1) | my_trans_unimodal_JAAD.yml | bezier_curve |
-| PIE Deterministic (Table.1) | my_trans_unimodal_PIE.yml | bezier_curve |
-| JAAD Multimodal (Table.2) | my_trans_multimodal_JAAD.yml | bezier_curve |
-| PIE Multimodal (Table.2) | my_trans_multimodal_PIE.yml | bezier_curve |
-| JAAD (config-1 in Table.3) | acl_unimodal_JAAD.yml | bezier_curve |
-| PIE (config-1 in Table.3) | acl_unimodal_PIE.yml | bezier_curve |
-| JAAD (config-2 in Table.3) | concat_unimodal_JAAD.yml | bezier_curve |
-| PIE (config-2 in Table.3) | concat_unimodal_PIE.yml | bezier_curve |
-| JAAD (config-3 in Table.3) | my_trans_unimodal_JAAD.yml | mlp |
-| PIE (config-3 in Table.3) | my_trans_unimodal_PIE.yml | mlp |
-| JAAD (config-4 in Table.3) | my_trans_unimodal_JAAD.yml | gru |
-| PIE (config-4 in Table.3) | my_trans_unimodal_PIE.yml | gru |
+| method | description | YML_FILE | decoder_type |
+| :------: | :------: | :------: | :------: |
+| JAAD Deterministic (Table.1) | - | my_trans_unimodal_JAAD.yml | bezier_curve |
+| PIE Deterministic (Table.1) | - | my_trans_unimodal_PIE.yml | bezier_curve |
+| JAAD Multimodal (Table.2) | - | my_trans_multimodal_JAAD.yml | bezier_curve |
+| PIE Multimodal (Table.2) | - | my_trans_multimodal_PIE.yml | bezier_curve |
+| JAAD (config-1 in Table.3) | use the encoder in ACL paper | acl_unimodal_JAAD.yml | bezier_curve |
+| PIE (config-1 in Table.3) | use the encoder in ACL paper | acl_unimodal_PIE.yml | bezier_curve |
+| JAAD (config-2 in Table.3) | replace the modality-pair attention with concatenation in Fig.3 of the paper | concat_unimodal_JAAD.yml | bezier_curve |
+| PIE (config-2 in Table.3) | replace the modality-pair attention with concatenation in Fig.3 of the paper | concat_unimodal_PIE.yml | bezier_curve |
+| JAAD (config-3 in Table.3) | replace the bezier_curve decoder with MLP | my_trans_unimodal_JAAD.yml | mlp |
+| PIE (config-3 in Table.3) | replace the bezier_curve decoder with MLP | my_trans_unimodal_PIE.yml | mlp |
+| JAAD (config-4 in Table.3) | replace the bezier_curve decoder with GRU | my_trans_unimodal_JAAD.yml | gru |
+| PIE (config-4 in Table.3) | replace the bezier_curve decoder with GRU | my_trans_unimodal_PIE.yml | gru |
 
 
 
