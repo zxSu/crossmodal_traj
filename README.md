@@ -31,8 +31,8 @@ python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_P
 python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decoder_type "bezier_curve"
 | method | description | YML_FILE | decoder_type |
 | :------: | :------: | :------: | :------: |
-| JAAD Deterministic (Table.1) | - | my_trans_unimodal_JAAD.yml | bezier_curve |
-| PIE Deterministic (Table.1) | - | my_trans_unimodal_PIE.yml | bezier_curve |
+| JAAD Deterministic (Table.1) | “crossmodal transformers” + “modality-pair attention” + “bezier_curve decoder” | my_trans_unimodal_JAAD.yml | bezier_curve |
+| PIE Deterministic (Table.1) | “crossmodal transformers” + “modality-pair attention” + “bezier_curve decoder” | my_trans_unimodal_PIE.yml | bezier_curve |
 | JAAD Multimodal (Table.2) | - | my_trans_multimodal_JAAD.yml | bezier_curve |
 | PIE Multimodal (Table.2) | - | my_trans_multimodal_PIE.yml | bezier_curve |
 | JAAD (config-1 in Table.3) | use the encoder in ACL paper | acl_unimodal_JAAD.yml | bezier_curve |
