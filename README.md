@@ -33,8 +33,8 @@ python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decode
 | :------: | :------: | :------: | :------: |
 | JAAD Deterministic (Table.1) | “crossmodal transformers” + “modality-pair attention” + “bezier_curve decoder” | my_trans_unimodal_JAAD.yml | bezier_curve |
 | PIE Deterministic (Table.1) | “crossmodal transformers” + “modality-pair attention” + “bezier_curve decoder” | my_trans_unimodal_PIE.yml | bezier_curve |
-| JAAD Multimodal (Table.2) | - | my_trans_multimodal_JAAD.yml | bezier_curve |
-| PIE Multimodal (Table.2) | - | my_trans_multimodal_PIE.yml | bezier_curve |
+| JAAD Multimodal (Table.2) | “crossmodal transformers” + “modality-pair attention” + "CVAE" + “bezier_curve decoder” | my_trans_multimodal_JAAD.yml | bezier_curve |
+| PIE Multimodal (Table.2) |  “crossmodal transformers” + “modality-pair attention” + "CVAE" + “bezier_curve decoder”  | my_trans_multimodal_PIE.yml | bezier_curve |
 | JAAD (config-1 in Table.3) | use the encoder in ACL paper | acl_unimodal_JAAD.yml | bezier_curve |
 | PIE (config-1 in Table.3) | use the encoder in ACL paper | acl_unimodal_PIE.yml | bezier_curve |
 | JAAD (config-2 in Table.3) | replace the modality-pair attention with concatenation in Fig.3 of the paper | concat_unimodal_JAAD.yml | bezier_curve |
