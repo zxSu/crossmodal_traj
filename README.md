@@ -9,7 +9,7 @@ Additionally, to make some plot visualization during training, we applyed the py
 JAAD and PIE  
 **** Note: It suggests that you prepare at least 1T disk to store: (1) all of the data (.png, .json, .xml, ……) from JAAD and PIE datasets. (2) the features that are pre-processed by some 3rd feature extractors.
 
-3. Inference
+3. Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
 (1) JAAD deterministic prediction  
 python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
