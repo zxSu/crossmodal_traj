@@ -6,7 +6,8 @@ Our code is based on the BiTraP framework (https://github.com/umautobots/bidirea
 Additionally, to make some plot visualization during training, we applyed the python package of 'visdom'.
 
 2.Datasets  
-JAAD and PIE
+JAAD and PIE  
+**** Note: It suggests that you prepare at least 1T disk to store: (1) all of the data (.png, .json, .xml, ……) from JAAD and PIE datasets. (2) the features that are pre-processed by some 3rd feature extractors. 
 
 3. Inference
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
