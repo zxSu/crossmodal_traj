@@ -30,6 +30,7 @@ python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_P
 4.Training  
 python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decoder_type "bezier_curve"
 | description | YML_FILE | decoder_type |
+| :------: | :------: | :------: |
 | JAAD Deterministic (Table.1) | my_trans_unimodal_JAAD.yml | bezier_curve |
 | PIE Deterministic (Table.1) | my_trans_unimodal_PIE.yml | bezier_curve |
 | JAAD Multimodal (Table.2) | my_trans_multimodal_JAAD.yml | bezier_curve |
