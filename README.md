@@ -11,7 +11,7 @@ JAAD and PIE
 
 
 
-3.config_files  
+3.Config_files  
 In each config file, there are several “path” needed to be modified by yourself, including “ROOT”, “TRAJECTORY_PATH”, “IMG_FEAT_SAVE_ROOT”, “BODY_ORI_SAVE_ROOT” and “POSE_FEAT_SAVE_ROOT”.
 
 
