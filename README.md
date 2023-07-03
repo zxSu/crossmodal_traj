@@ -14,7 +14,7 @@ cd datasets
 python jaad_extract_imgs.py  
 (b) PIE  
 cd datasets/PIE_imgs_extract  
-python extract_annot_images.py 
+python extract_annot_images.py   
 (2) the features that are pre-processed by some 3rd feature extractors.  
 
 
