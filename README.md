@@ -20,7 +20,7 @@ Additionally, to make some plot visualization during training, we applyed the py
 We use a 3rd human pose estimator [???] to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder.  
 To save space, all of the trained checkpoints are not included. Thus, please download these trained models (pose_hrnet_w32_256x192.pth , model_hboe.pth) by following the instructions of the GitHub repo (https://github.com/ChenyanWu/MEBOW).  
-First of all, please modify the variable “args.cfg = *PROJECT_ROOT*/MEBOW/experiments/coco/my_cfg.yaml” in the fuction “create_MEBOW_model()” of the source code file “datasets/MEBOW_utils.py”.  
+First of all, please modify the variable “args.cfg = ***PROJECT_ROOT***/MEBOW/experiments/coco/my_cfg.yaml” in the fuction “create_MEBOW_model()” of the source code file “datasets/MEBOW_utils.py”.  
 Next, for the “pose_hrnet_w32_256x192.pth”, just place it to “models/pose_hrnet_w32_256x192.pth”.  
 Next, for the “model_hboe.pth”, you need to change the path “TEST.MODEL_FILE” in “my_cfg.yaml” to where you save it. For us, we save it to “MEBOW/output/COCO_HOE_Dataset/author_final_train/model_hboe.pth”.  
 
@@ -32,25 +32,26 @@ In each config file, there are several “path” needed to be modified by yours
 ## Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
 (1) JAAD deterministic prediction  
->python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"  
 
 (2) PIE deterministic prediction  
->python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_unimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"  
 
 (3) JAAD multimodal prediction  
->python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_multimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"  
 
 (4) PIE multimodal prediction  
->python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"
+>python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_multimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"
 
 
-**** Note: *YOUR_CKPT_ROOT* is the folder that contains the folder "checkpoints/..."
+**** Note: ***YOUR_CKPT_ROOT*** is the folder that contains the folder "checkpoints/..."
 
 
 
 
 ## Training  
-python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decoder_type "bezier_curve"
+>python my_traj_train.py --config_file "***YOUR_CONFIG_FOLDER***/***YML_FILE***" --decoder_type "bezier_curve"
+
 | method | description | YML_FILE | decoder_type |
 | :------: | :------: | :------: | :------: |
 | JAAD Deterministic (Table.1) | "crossmodal transformers" + "modality-pair attention" + "bezier_curve decoder" | my_trans_unimodal_JAAD.yml | bezier_curve |
