@@ -7,14 +7,14 @@ Additionally, to make some plot visualization during training, we applyed the py
 
 2.Datasets and preprocessed features  
 **** Note: It suggests that you prepare at least 1T disk to store:   
-(1) all of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
+(1) All of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
 (1.1) JAAD  
 cd datasets  
 python jaad_extract_imgs.py  
 (1.2) PIE  
 cd datasets/PIE_imgs_extract  
 python extract_annot_images.py   
-(2) extract image (human pose) features and human body orientation.  
+(2) Extract image (human pose) features and human body orientation.  
 We use a 3rd human pose estimator [???] to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder.  
 To save space, all of the trained checkpoints are not included. Thus, please download these trained models (pose_hrnet_w32_256x192.pth , model_hboe.pth) by following the instructions of the GitHub repo (https://github.com/ChenyanWu/MEBOW).  
