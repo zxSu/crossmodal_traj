@@ -9,8 +9,8 @@ Additionally, to make some plot visualization during training, we applyed the py
 **** Note: It suggests that you prepare at least 1T disk to store:   
 (1) All of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
 (1.1) JAAD  
-cd datasets  
-python jaad_extract_imgs.py  
+>cd datasets  
+>python jaad_extract_imgs.py  
 (1.2) PIE  
 cd datasets/PIE_imgs_extract  
 python extract_annot_images.py   
