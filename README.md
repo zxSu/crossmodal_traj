@@ -5,7 +5,7 @@ This repo contains the code for the paper: Crossmodal Transformer Based Generati
 Our code is based on the BiTraP framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as BiTraP framework.  
 Additionally, to make some plot visualization during training, we applyed the python package of 'visdom'.
 
-2.Datasets and preprocessed features  
+## Datasets and preprocessed features  
 **** Note: It suggests that you prepare at least 1T disk to store:   
 (1) All of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
 (1.1) JAAD  
@@ -26,10 +26,10 @@ Next, for the “model_hboe.pth”, you need to change the path “TEST.MODEL_FI
 
 
 
-3.Config_files  
+## Config_files  
 In each config file, there are several “path” needed to be modified by yourself, including “ROOT”, “TRAJECTORY_PATH”, “IMG_FEAT_SAVE_ROOT”, “BODY_ORI_SAVE_ROOT” and “POSE_FEAT_SAVE_ROOT”.
 
-4.Inference  
+## Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
 (1) JAAD deterministic prediction  
 >python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
@@ -49,7 +49,7 @@ The checkpoints of our models trained on JAAD, PIE can be downloaded here.(comin
 
 
 
-5.Training  
+## Training  
 python my_traj_train.py --config_file "*YOUR_CONFIG_FOLDER*/*YML_FILE*" --decoder_type "bezier_curve"
 | method | description | YML_FILE | decoder_type |
 | :------: | :------: | :------: | :------: |
