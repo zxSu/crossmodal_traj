@@ -13,8 +13,9 @@ Additionally, to make some plot visualization during training, we applyed the py
 >python jaad_extract_imgs.py
 
 (1.2) PIE  
-cd datasets/PIE_imgs_extract  
-python extract_annot_images.py   
+>cd datasets/PIE_imgs_extract  
+>python extract_annot_images.py   
+
 (2) Extract image (human pose) features and human body orientation.  
 We use a 3rd human pose estimator [???] to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder.  
@@ -31,13 +32,17 @@ In each config file, there are several “path” needed to be modified by yours
 4.Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
 (1) JAAD deterministic prediction  
-python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+
 (2) PIE deterministic prediction  
-python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_unimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+
 (3) JAAD multimodal prediction  
-python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+>python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"  
+
 (4) PIE multimodal prediction  
-python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"
+>python my_traj_test.py --config_file "*YOUR_CONFIG_FOLDER*/my_trans_multimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "*YOUR_CKPT_ROOT*"
+
 
 **** Note: *YOUR_CKPT_ROOT* is the folder that contains the folder "checkpoints/..."
 
