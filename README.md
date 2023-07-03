@@ -27,7 +27,7 @@ Next, for the “model_hboe.pth”, you need to change the path “TEST.MODEL_FI
 
 
 ## Config_files  
-In each config file, there are several “path” needed to be modified by yourself, including “ROOT”, “TRAJECTORY_PATH”, “IMG_FEAT_SAVE_ROOT”, “BODY_ORI_SAVE_ROOT” and “POSE_FEAT_SAVE_ROOT”.
+In each config file, there are several “path” needed to be changed by yourself, including “ROOT”, “TRAJECTORY_PATH”, “IMG_FEAT_SAVE_ROOT”, “BODY_ORI_SAVE_ROOT” and “POSE_FEAT_SAVE_ROOT”.
 
 ## Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded here.(coming soon)  
