@@ -10,7 +10,8 @@ Additionally, to make some plot visualization during training, we applyed the py
 (1) All of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
 (1.1) JAAD  
 >cd datasets  
->python jaad_extract_imgs.py  
+>python jaad_extract_imgs.py
+
 (1.2) PIE  
 cd datasets/PIE_imgs_extract  
 python extract_annot_images.py   
