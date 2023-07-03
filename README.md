@@ -5,18 +5,16 @@ This repo contains the code for the paper: Crossmodal Transformer Based Generati
 Our code is based on the BiTraP framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as BiTraP framework.  
 Additionally, to make some plot visualization during training, we applyed the python package of 'visdom'.
 
-2.Datasets  
-JAAD and PIE  
+2.Datasets and preprocessed features  
 **** Note: It suggests that you prepare at least 1T disk to store:   
 (1) all of the data (.png, .json, .xml, ……) from JAAD and PIE datasets.  
-(a) JAAD  
+(1.1) JAAD  
 cd datasets  
 python jaad_extract_imgs.py  
-(b) PIE  
+(1.2) PIE  
 cd datasets/PIE_imgs_extract  
 python extract_annot_images.py   
-(2) the features that are pre-processed by some 3rd feature extractors.  
-(a) extract image (human pose) features and human body orientation  
+(2) extract image (human pose) features and human body orientation.  
 We use a 3rd human pose estimator [???] to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder.  
 To save space, all of the trained checkpoints are not included. Thus, please download these trained models (pose_hrnet_w32_256x192.pth , model_hboe.pth) by following the instructions of the GitHub repo (https://github.com/ChenyanWu/MEBOW).  
