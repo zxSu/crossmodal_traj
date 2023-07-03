@@ -2,7 +2,7 @@
 This repo contains the code for the paper: Crossmodal Transformer Based Generative Framework for Pedestrian Trajectory Prediction.
 
 ## Dependencies  
-Our code is based on the BiTraP framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as BiTraP framework.  
+Our code is based on the [BiTraP](https://github.com/umautobots/bidireaction-trajectory-prediction) framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as BiTraP framework.  
 Additionally, to make some plot visualization during training, we applyed the python package of 'visdom'.
 
 ## Datasets and preprocessed features  
@@ -17,7 +17,7 @@ Additionally, to make some plot visualization during training, we applyed the py
 >python extract_annot_images.py   
 
 (2) Extract image (human pose) features and human body orientation.  
-We use a 3rd human pose estimator [???] to extract human pose features and predict human body orientation.  
+We use a 3rd human pose estimator [MEBOW](https://github.com/ChenyanWu/MEBOW) to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder.  
 To save space, all of the trained checkpoints are not included. Thus, please download these trained models (pose_hrnet_w32_256x192.pth , model_hboe.pth) by following the instructions of the GitHub repo (https://github.com/ChenyanWu/MEBOW).  
 First of all, please modify the variable “args.cfg = ***PROJECT_ROOT***/MEBOW/experiments/coco/my_cfg.yaml” in the fuction “create_MEBOW_model()” of the source code file “datasets/MEBOW_utils.py”.  
