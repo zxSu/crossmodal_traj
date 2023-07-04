@@ -1,0 +1,52 @@
+PROJECT: 'acl_unimodal_PIE'
+CKPT_DIR: 'checkpoints/PIE_checkpoints/traj_checkpoints/' 
+OUT_DIR: 'outputs/PIE_outputs/traj_outputs'
+DEVICE: 'cuda'
+METHOD: 'ACL_Unimodal'
+VISUALIZE: True
+MODEL:
+  IMG_SIZE: (256,256)
+  BEST_OF_MANY: True
+  K: 1
+  LATENT_DIST: 'gaussian' 
+  LATENT_DIM: 0 
+
+  PRED_LEN: 45 # input and pred_len is defined in 30FPS
+  GLOBAL_EMBED_SIZE: 272    # original: 256
+  GLOBAL_HIDDEN_SIZE:  272    # original: 256
+  GLOBAL_INPUT_DIM: 4    # should be modified to 6 for PIE dataset
+  DROPOUT: 0.0
+  
+  ENC_CONCAT_TYPE: 'average'
+  INPUT_EMBED_SIZE: 272    # original: 256
+  FLOW_EMBED_SIZE: 272
+  FLOW_HIDDEN_SIZE: 272
+  ENC_HIDDEN_SIZE: 272    # original: 256
+  DEC_INPUT_SIZE: 272
+  DEC_HIDDEN_SIZE: 272    # original: 256
+  DEC_OUTPUT_DIM: 4
+  ATTRIB_FEAT_TYPE: 'simple'
+  INTENT_OUT_DIM: 2
+  DECODER_TYPE: 'bezier_curve'
+DATASET:
+  NAME: 'PIE'
+  ROOT: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset'
+  TRAJECTORY_PATH: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset/data_cache'
+  IMG_FEAT_SAVE_ROOT: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset/img_feat_cache'
+  BODY_ORI_SAVE_ROOT: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset/body_ori_cache'
+  POSE_FEAT_SAVE_ROOT: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset/pose_feat_cache'
+  BBOX_TYPE: 'cxcywh' # bbox is in cxcywh format
+  NORMALIZE: 'zero-one' 
+  MIN_BBOX: [0,0,0,0] # the min of cxcywh or x1x2y1y2
+  MAX_BBOX: [1920, 1080, 1920, 1080] # the max of cxcywh or x1x2y1y2
+DATALOADER:
+  NUM_WORKERS: 1    # should not be too large (original: 24)
+SOLVER:
+  MAX_EPOCH: 50
+  BATCH_SIZE: 128    # should not be too large (original: 128)
+  LR: 0.001
+  scheduler: 'plateau'
+TEST:
+  BATCH_SIZE: 128    # should not be too large (original: 1024)
+VIZ:
+  TRAJ_VIZ_SAVE_ROOT: '/home/suzx/new_disks/eclipse_ws2/PIEpredict/PIE_dataset/visualize_results/unimodal/acl'
