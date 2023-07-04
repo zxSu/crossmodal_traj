@@ -1,0 +1,1 @@
+cd /home/suzx/eclipse-workspace/crossmodal_traj/tools/scripts
