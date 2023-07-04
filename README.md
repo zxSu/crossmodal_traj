@@ -3,7 +3,7 @@ This repo contains the code for the paper: Crossmodal Transformer Based Generati
 
 ## Dependencies  
 Our code is based on the [BiTraP](https://github.com/umautobots/bidireaction-trajectory-prediction) framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as BiTraP framework.  
-Additionally, to make some plot visualizations during training, we applyed the python package of 'visdom'.
+Additionally, to make some plot visualizations during training, we applyed the python package of "visdom".
 
 ## Datasets and preprocessed features  
 **** Note: It suggests that you prepare at least 1T disk to store:   
