@@ -57,9 +57,9 @@ if __name__ == '__main__':
     parser.add_argument('--gpu', default='0', type=str)
     parser.add_argument(
         "--config_file",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_gmm_PIE.yml",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_np_PIE.yml",
-        default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_np_JAAD.yml",
+        #default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/bitrap_gmm_PIE.yml",
+        #default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/bitrap_np_PIE.yml",
+        default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/bitrap_np_JAAD.yml",
         metavar="FILE",
         help="path to config file",
         type=str,
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
     
     
-    #ckpt_path = os.path.join('/home/suzx/eclipse-workspace/pie_trajPredict/tools', cfg.CKPT_DIR, cfg.METHOD, 'no_wandb', 'Epoch_049.pth')
+    #ckpt_path = os.path.join('/home/suzx/eclipse-workspace/crossmodal_traj/tools', cfg.CKPT_DIR, cfg.METHOD, 'no_wandb', 'Epoch_049.pth')
     #ckpt_path = '/home/suzx/Desktop/bitrap_checkpoints/JAAD/bitrap_np_K_1.pth'
     ckpt_path = '/home/suzx/Desktop/bitrap_checkpoints/JAAD/bitrap_np_K_20.pth'
     cfg.CKPT_DIR = ckpt_path
