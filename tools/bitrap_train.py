@@ -39,11 +39,10 @@ def main():
     parser.add_argument('--gpu', default='0', type=str)
     parser.add_argument(
         "--config_file",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_gmm_PIE.yml",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/my_gmm_PIE.yml",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_np_PIE.yml",
-        default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/bitrap_np_ETH.yml",
-        #default="/home/suzx/eclipse-workspace/pie_trajPredict/configs/my_np_PIE.yml",
+        #default="/home/suzx/eclipse-workspace/crossmodaql_traj/configs/bitrap_gmm_PIE.yml",
+        #default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/my_gmm_PIE.yml",
+        #default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/bitrap_np_PIE.yml",
+        default="/home/suzx/eclipse-workspace/crossmodal_traj/configs/bitrap_np_ETH.yml",
         metavar="FILE",
         help="path to config file",
         type=str,
