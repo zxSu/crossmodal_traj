@@ -48,7 +48,7 @@ Before inference or training, you should:
 >python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_multimodal_PIE.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"
 
 
-**** Note: ***YOUR_CKPT_ROOT*** is the folder that contains the folder "checkpoints/..."
+**** Note: ***YOUR_CKPT_ROOT*** is the folder that contains the folder "checkpoints/..."  
 **** Note: When you make the training or inference processes at the first time, it will cost very long time to extract human image (pose) features and save them to your file disk. Next time, it will take the strategy to load pose features directly because all features are saved to your disk.
 
 
