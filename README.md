@@ -31,6 +31,10 @@ In each config file, there are several “path” needed to be changed by yourse
 
 ## Inference  
 The checkpoints of our models trained on JAAD, PIE can be downloaded [here](https://drive.google.com/drive/folders/1e9Dmf1_qBKQc1cXUfPPonkM7iHqIh9vT?usp=sharing).  
+Before inference or training, you should:
+>export PYTHONPATH=***PROJECT_FOLDER****:****PROJECT_FOLDER***/MEBOW/lib:***PROJECT_FOLDER***/MEBOW/tools:$PYTHONPATH
+
+
 (1) JAAD deterministic prediction  
 >python my_traj_test.py --config_file "***YOUR_CONFIG_FOLDER***/my_trans_unimodal_JAAD.yml" --decoder_type "bezier_curve" --ckpt_root "***YOUR_CKPT_ROOT***"  
 
