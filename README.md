@@ -6,7 +6,7 @@ Our code is based on the [BiTraP](https://github.com/umautobots/bidireaction-tra
 Additionally, to make some plot visualizations during training, we applyed the python package of "visdom".
 
 ## Datasets and preprocessed features  
-**** Note: It suggests that you prepare at least 1T disk to store:   
+**** Note: It suggests you to prepare at least 1T disk to store:   
 (1) All of the data (.png, .json, .xml, ……) from [JAAD](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) and [PIE](https://data.nvision2.eecs.yorku.ca/PIE_dataset/) datasets.  
 (1.1) JAAD  
 >cd datasets  
