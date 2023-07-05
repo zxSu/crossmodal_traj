@@ -49,6 +49,7 @@ Before inference or training, you should:
 
 
 **** Note: ***YOUR_CKPT_ROOT*** is the folder that contains the folder "checkpoints/..."
+**** Note: When you make the training or inference processes at the first time, it will cost very long time to extract human image (pose) features and save them to your file disk. Next time, it will take the strategy to load pose features directly because all features are saved to your disk.
 
 
 
