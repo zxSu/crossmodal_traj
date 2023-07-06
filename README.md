@@ -7,7 +7,7 @@ Additionally, to make some plot visualizations during training, we applyed the p
 
 ## Datasets and preprocessed features  
 **** Note: It suggests you to prepare at least 1T disk to store:   
-(1) All of the data (.png, .json, .xml, ……) from [JAAD](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) and [PIE](https://data.nvision2.eecs.yorku.ca/PIE_dataset/) datasets.  
+(1) All of the data (.png, .json, .xml, ……) from [JAAD](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) and [PIE](https://data.nvision2.eecs.yorku.ca/PIE_dataset/) datasets. Besides, you need to extract all frames from raw videos to your disk.  
 (1.1) JAAD  
 >cd datasets  
 >python jaad_extract_imgs.py
