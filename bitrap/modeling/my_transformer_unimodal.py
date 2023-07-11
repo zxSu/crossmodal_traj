@@ -363,24 +363,6 @@ class Trans_Predictor_Unimodal(nn.Module):
      
     ######## the bezier curve based decoder
     def traj_predict(self, obsLast_bbox, bbox_h):
-            
-#         pred_curve_params_all = self.cubic_polynomial_mlp_predictor(bbox_h)
-#         #
-#         cx_curve_params = pred_curve_params_all[:, :4]
-#         cy_curve_params = pred_curve_params_all[:, 4:8]
-#         w_curve_params = pred_curve_params_all[:, 8:12]
-#         h_curve_params = pred_curve_params_all[:, 12:16]
-#         #
-#         t_linspace = (torch.linspace(1, self.pred_len, steps=self.pred_len) / self.pred_len).repeat(bbox_h.shape[0], 1).cuda()
-#         cx_curve = cx_curve_params[:, 0].reshape([-1, 1]) + cx_curve_params[:, 1].reshape([-1, 1]) * t_linspace + cx_curve_params[:, 2].reshape([-1, 1]) * t_linspace**2 + cx_curve_params[:, 3].reshape([-1, 1]) * t_linspace**3
-#         cy_curve = cy_curve_params[:, 0].reshape([-1, 1]) + cy_curve_params[:, 1].reshape([-1, 1]) * t_linspace + cy_curve_params[:, 2].reshape([-1, 1]) * t_linspace**2 + cy_curve_params[:, 3].reshape([-1, 1]) * t_linspace**3
-#         w_curve = w_curve_params[:, 0].reshape([-1, 1]) + w_curve_params[:, 1].reshape([-1, 1]) * t_linspace + w_curve_params[:, 2].reshape([-1, 1]) * t_linspace**2 + w_curve_params[:, 3].reshape([-1, 1]) * t_linspace**3
-#         h_curve = h_curve_params[:, 0].reshape([-1, 1]) + h_curve_params[:, 1].reshape([-1, 1]) * t_linspace + h_curve_params[:, 2].reshape([-1, 1]) * t_linspace**2 + h_curve_params[:, 3].reshape([-1, 1]) * t_linspace**3
-#         #
-#         pred_traj = torch.stack([cx_curve, cy_curve, w_curve, h_curve], dim=2)
-#         
-#         return pred_traj
-            
         
         # directly predict the 'control points'
         pred_control_points = self.control_points_mlp_predictor(bbox_h)
