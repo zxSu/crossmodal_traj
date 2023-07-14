@@ -20,8 +20,8 @@ Additionally, to make some plot visualizations during training, we applyed the p
 We use a 3rd party human pose estimator [MEBOW](https://github.com/ChenyanWu/MEBOW) to extract human pose features and predict human body orientation.  
 We added the source code folder of the pose estimator into our source codes, as you can see the “MEBOW” folder (decompress the MEBOW.zip firstly).  
 To save space, all of the trained checkpoints are not included. Thus, please download these trained models (pose_hrnet_w32_256x192.pth , model_hboe.pth) by following the instructions of the GitHub repo (https://github.com/ChenyanWu/MEBOW).  
-First of all, please modify the variable “args.cfg = ***PROJECT_ROOT***/MEBOW/experiments/coco/my_cfg.yaml” in the fuction “create_MEBOW_model()” of the source code file “datasets/MEBOW_utils.py”.  
-Next, for the “pose_hrnet_w32_256x192.pth”, just place it to “models/pose_hrnet_w32_256x192.pth”.  
+First of all, please modify the variable “args.cfg = ***PROJECT_ROOT***/MEBOW/experiments/coco/my_cfg.yaml” in the fuction “create_MEBOW_model()” of the source code file “***PROJECT_ROOT***/datasets/MEBOW_utils.py”.  
+Next, for the “pose_hrnet_w32_256x192.pth”, just place it to “***PROJECT_ROOT***/MEBOW/models/pose_hrnet_w32_256x192.pth”.  
 Next, for the “model_hboe.pth”, you need to change the path “TEST.MODEL_FILE” in “my_cfg.yaml” to where you save it. For us, we save it to “***PROJECT_ROOT***/MEBOW/output/COCO_HOE_Dataset/author_final_train/model_hboe.pth”.  
 
 
