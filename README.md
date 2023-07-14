@@ -1,5 +1,5 @@
 # crossmodal_traj
-This repo contains the code for the paper: Crossmodal Transformer Based Generative Framework for Pedestrian Trajectory Prediction.
+This repository contains the code for the paper: Crossmodal Transformer Based Generative Framework for Pedestrian Trajectory Prediction.
 
 ## Dependencies  
 Our code is based on the [BiTraP](https://github.com/umautobots/bidireaction-trajectory-prediction) framework (https://github.com/umautobots/bidireaction-trajectory-prediction). Thus, all of the requirements (python version, pytorch version, .....) are the same as the BiTraP framework.  
