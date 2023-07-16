@@ -144,7 +144,6 @@ def main():
     cfg.merge_from_file(args.config_file)
     
     
-    
     ######## I have to say that random states are very important. 
     ######## Sometimes, training our model with a random state can achieve good performance (for example, these results reported in our paper)
     # # set fixed random state (optional)
@@ -154,6 +153,7 @@ def main():
     # random_state_save_path = '/home/suzx/eclipse-workspace/crossmodal_traj/random_state/random_state_multimodal_PIE.pkl'
     # get_and_save_random_state(random_state_save_path)
     # #set_random_state(random_state_save_path)
+    
     
     #torch.backends.cudnn.benchmark = False    #
     torch.backends.cudnn.deterministic = True
