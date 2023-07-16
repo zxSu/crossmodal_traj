@@ -155,6 +155,8 @@ def main():
     # get_and_save_random_state(random_state_save_path)
     # #set_random_state(random_state_save_path)
     
+    #torch.backends.cudnn.benchmark = False    #
+    torch.backends.cudnn.deterministic = True
     
     cfg.merge_from_list(args.opts)
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
